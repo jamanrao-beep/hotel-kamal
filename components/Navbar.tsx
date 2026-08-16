@@ -5,16 +5,18 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50 bg-secondary px-8 py-4 flex items-center justify-between border-b border-[#1f4731]">
       <div className="flex items-center gap-2">
-        <Image src="/images/logo.png" alt="UK Season Logo" width={80} height={80} className="w-16 h-auto" />
+        <Link href="/">
+          <Image src="/images/logo.png" alt="UK Season Logo" width={80} height={80} className="w-16 h-auto cursor-pointer" />
+        </Link>
       </div>
       
       <div className="hidden lg:flex items-center gap-8">
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">HOME</Link>
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">UK SEASON RESTAURANT</Link>
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">ROOMS & STAY</Link>
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">GALLERY</Link>
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">ABOUT US</Link>
-        <Link href="#" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">CONTACT</Link>
+        <Link href="/" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">HOME</Link>
+        <Link href="/restaurant" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">UK SEASON RESTAURANT</Link>
+        <Link href="/rooms" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">ROOMS & STAY</Link>
+        <Link href="/gallery" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">GALLERY</Link>
+        <Link href="/about" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">ABOUT US</Link>
+        <Link href="/contact" className="text-white text-sm font-semibold tracking-wider hover:text-accent transition-colors">CONTACT</Link>
       </div>
 
       <button className="border border-accent text-accent px-6 py-2 text-sm font-semibold tracking-wider hover:bg-accent hover:text-primary transition-colors flex items-center gap-2">

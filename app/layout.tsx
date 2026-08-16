@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -29,7 +31,13 @@ export default function RootLayout({ children }: any) {
       lang="en"
       className={`${playfair.variable} ${montserrat.variable} ${greatVibes.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Navbar />
+        <main className="flex-1 flex flex-col pt-[72px]">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

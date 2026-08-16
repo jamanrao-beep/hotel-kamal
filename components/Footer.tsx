@@ -15,12 +15,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h5 className="text-accent text-xs font-bold tracking-widest mb-6 uppercase">QUICK LINKS</h5>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">Home</Link></li>
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">UK Season Restaurant</Link></li>
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">Rooms & Stay</Link></li>
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">Gallery</Link></li>
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link href="#" className="text-gray-400 text-xs hover:text-accent transition-colors">Contact</Link></li>
+              <li><Link href="/" className="text-gray-400 text-xs hover:text-accent transition-colors">Home</Link></li>
+              <li><Link href="/restaurant" className="text-gray-400 text-xs hover:text-accent transition-colors">UK Season Restaurant</Link></li>
+              <li><Link href="/rooms" className="text-gray-400 text-xs hover:text-accent transition-colors">Rooms & Stay</Link></li>
+              <li><Link href="/gallery" className="text-gray-400 text-xs hover:text-accent transition-colors">Gallery</Link></li>
+              <li><Link href="/about" className="text-gray-400 text-xs hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="text-gray-400 text-xs hover:text-accent transition-colors">Contact</Link></li>
             </ul>
           </div>
 
