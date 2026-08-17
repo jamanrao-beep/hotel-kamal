@@ -5,12 +5,12 @@ export default function RoomsSection() {
     {
       title: "DELUXE ROOM",
       desc: "Comfort & elegance\nwith mountain view",
-      img: "/images/actual/img-2.jpg" // placeholder
+      img: "/images/actual/img-4.jpg"
     },
     {
       title: "SUPER DELUXE ROOM",
       desc: "Spacious room with\npremium amenities",
-      img: "/images/actual/img-3.jpg"
+      img: "/images/actual/img-4.jpg"
     },
     {
       title: "FAMILY ROOM",
@@ -20,7 +20,7 @@ export default function RoomsSection() {
     {
       title: "PREMIUM SUITE",
       desc: "Luxury redefined with\nscenic balcony",
-      img: "/images/actual/img-5.jpg"
+      img: "/images/actual/img-4.jpg"
     }
   ];
 
