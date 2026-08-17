@@ -66,14 +66,16 @@ export default function AboutSection() {
           </div>
         </div>
         
-        <div className="w-full lg:w-1/2 relative min-h-[500px]">
-          <Image
-            src="/images/image8.png"
-            alt="Hotel Exterior"
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
-          />
+        <div className="w-full lg:w-1/2 p-8 lg:p-12 flex items-center justify-center">
+          <div className="relative w-full h-full min-h-[400px] lg:min-h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/image8.png"
+              alt="Hotel Exterior"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
 

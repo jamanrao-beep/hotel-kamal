@@ -17,10 +17,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full h-[72px] z-50 bg-secondary px-8 flex items-center justify-between border-b border-[#1f4731]">
-      <div className="flex-shrink-0 w-24 xl:w-32 h-full relative">
-        <Link href="/" className="absolute top-1 left-0 w-full block">
-          <Image src="/images/Logo_golden_transparent.png" alt="UK Season Logo" width={160} height={160} className="w-full h-auto cursor-pointer drop-shadow-md" />
+    <nav className="fixed w-full z-50 bg-secondary px-8 py-2 flex items-center justify-between border-b border-[#1f4731]">
+      <div className="flex-shrink-0">
+        <Link href="/">
+          <Image src="/images/Logo_golden_transparent.png" alt="UK Season Logo" width={160} height={160} className="w-24 xl:w-28 h-auto cursor-pointer drop-shadow-md" />
         </Link>
       </div>
 
