@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Logo Column */}
           <div className="lg:col-span-1">
-            <Image src="/images/logo.png" alt="UK Season Logo" width={100} height={100} className="w-20 h-auto mb-6" />
+            <Image src="/images/Logo_final.png" alt="UK Season Logo" width={300} height={300} className="w-56 xl:w-72 h-auto mb-6 invert mix-blend-screen sepia saturate-200 brightness-125" />
           </div>
 
           {/* Quick Links */}
@@ -87,8 +87,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="pt-8 border-t border-[#1f4731] text-center flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-[10px]">© 2024 UK Season Restaurant by Hotel Kamal Residency. All Rights Reserved.</p>
+        <div className="pt-8 border-t border-[#1f4731] text-center flex justify-center items-center gap-4">
+          <p className="text-gray-500 text-[10px]">© 2026 UK Season Restaurant by Hotel Kamal Residency. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
