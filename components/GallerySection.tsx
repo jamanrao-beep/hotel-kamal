@@ -5,14 +5,14 @@ export default function GallerySection() {
   
   // Using placeholders. In reality, these would be the diverse images from the Word doc
   const images = [
-    "/images/gallery/gallery-1.png",
-    "/images/gallery/gallery-2.png",
-    "/images/gallery/gallery-3.png",
-    "/images/gallery/gallery-4.png",
-    "/images/gallery/gallery-5.png",
-    "/images/gallery/gallery-6.png",
-    "/images/gallery/gallery-7.png",
-    "/images/gallery/gallery-8.png",
+    "/images/actual/img-1.jpg",
+    "/images/actual/img-2.jpg",
+    "/images/actual/img-3.jpg",
+    "/images/actual/img-4.jpg",
+    "/images/actual/img-5.jpg",
+    "/images/actual/img-6.jpg",
+    "/images/actual/img-7.jpg",
+    "/images/actual/img-8.jpg",
   ];
 
   return (

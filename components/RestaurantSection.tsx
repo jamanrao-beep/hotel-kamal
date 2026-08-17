@@ -56,7 +56,7 @@ export default function RestaurantSection() {
       {/* Right Image */}
       <div className="w-full md:w-1/2 relative min-h-[400px] md:min-h-[600px] flex items-center justify-center">
         <Image
-          src="/images/image1.png"
+          src="/images/actual/img-7.jpg"
           alt="UK Season Restaurant Food"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"

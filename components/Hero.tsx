@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/image3.png"
+          src="/images/actual/img-1.jpg"
           alt="Hero Background"
           fill
           sizes="100vw"

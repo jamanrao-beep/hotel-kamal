@@ -5,22 +5,22 @@ export default function RoomsSection() {
     {
       title: "DELUXE ROOM",
       desc: "Comfort & elegance\nwith mountain view",
-      img: "/images/image4.png" // placeholder
+      img: "/images/actual/img-2.jpg" // placeholder
     },
     {
       title: "SUPER DELUXE ROOM",
       desc: "Spacious room with\npremium amenities",
-      img: "/images/image4.png"
+      img: "/images/actual/img-3.jpg"
     },
     {
       title: "FAMILY ROOM",
       desc: "Perfect for families\n& long stays",
-      img: "/images/image4.png"
+      img: "/images/actual/img-4.jpg"
     },
     {
       title: "PREMIUM SUITE",
       desc: "Luxury redefined with\nscenic balcony",
-      img: "/images/image4.png"
+      img: "/images/actual/img-5.jpg"
     }
   ];
 
@@ -75,7 +75,7 @@ export default function RoomsSection() {
         
         <div className="w-full md:w-1/2 relative min-h-[400px]">
           <Image
-            src="/images/image6.png"
+            src="/images/actual/img-6.jpg"
             alt="Room View"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
