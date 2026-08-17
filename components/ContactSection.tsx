@@ -87,18 +87,16 @@ export default function ContactSection() {
             </form>
           </div>
 
-          <div className="relative w-full h-[150px] bg-[#f0eee6] rounded-sm overflow-hidden flex items-center justify-center">
-            {/* Map Placeholder Graphic */}
-            <div className="text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 text-red-600 mx-auto mb-2">
-                <path fillRule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clipRule="evenodd" />
-              </svg>
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">UK SEASON RESTAURANT</span>
-            </div>
-            
-            {/* Simple road line decoration */}
-            <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white transform -rotate-6"></div>
-            <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white transform rotate-6"></div>
+          <div className="relative w-full h-[300px] rounded-sm overflow-hidden">
+            <iframe
+              src="https://maps.google.com/maps?q=Hotel%20Kamal%20Residency,%20Chamba,%20Uttarakhand&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

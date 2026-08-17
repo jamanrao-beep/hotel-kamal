@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Logo Column */}
           <div className="lg:col-span-1">
-            <Image src="/images/Logo_final.png" alt="UK Season Logo" width={300} height={300} className="w-56 xl:w-72 h-auto mb-6 invert mix-blend-screen sepia saturate-200 brightness-125" />
+            <Image src="/images/Logo_golden_transparent.png" alt="UK Season Logo" width={300} height={300} className="w-56 xl:w-72 h-auto mb-6 drop-shadow-md" />
           </div>
 
           {/* Quick Links */}

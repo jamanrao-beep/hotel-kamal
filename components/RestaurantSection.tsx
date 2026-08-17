@@ -41,27 +41,28 @@ export default function RestaurantSection() {
   ];
 
   return (
-    <section className="w-full bg-primary flex flex-col md:flex-row relative">
-      {/* Left Content */}
-      <div className="w-full md:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
-        <h4 className="text-accent text-sm font-semibold tracking-widest mb-2 uppercase">OUR RESTAURANT</h4>
-        <h2 className="text-white text-5xl font-serif mb-6">UK SEASON<br/>RESTAURANT</h2>
-        <p className="text-gray-300 text-sm leading-relaxed mb-16 max-w-md">
-          A culinary journey like no other. From authentic Indian flavors to global favorites, our multi-cuisine menu is crafted to satisfy every palate.
-        </p>
-        
-        {/* White background features grid at the bottom of the text */}
-      </div>
-
-      {/* Right Image */}
-      <div className="w-full md:w-1/2 relative min-h-[400px] md:min-h-[600px] flex items-center justify-center">
+    <section className="w-full relative min-h-[600px] flex items-center">
+      {/* Full Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/images/actual/img-7.jpg"
+          src="/images/actual/restaurant-hero.jpg"
           alt="UK Season Restaurant Food"
           fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover"
+          sizes="100vw"
+          className="object-cover object-right"
+          priority
         />
+        {/* Subtle gradient to ensure text readability on mobile where the image might crop differently */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 md:via-transparent to-transparent"></div>
+      </div>
+
+      {/* Left Content over the image */}
+      <div className="relative z-10 w-full md:w-1/2 p-12 lg:p-24 flex flex-col justify-center pb-32 md:pb-24">
+        <h4 className="text-accent text-sm font-semibold tracking-widest mb-2 uppercase">OUR RESTAURANT</h4>
+        <h2 className="text-white text-5xl font-serif mb-6">UK SEASON<br/>RESTAURANT</h2>
+        <p className="text-gray-300 text-sm leading-relaxed mb-8 max-w-md">
+          A culinary journey like no other. From authentic Indian flavors to global favorites, our multi-cuisine menu is crafted to satisfy every palate.
+        </p>
       </div>
 
       {/* Features overlap at the bottom */}

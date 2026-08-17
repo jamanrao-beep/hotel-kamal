@@ -5,22 +5,22 @@ export default function CuisinesSection() {
     {
       title: "INDIAN",
       desc: "Rich & authentic\nflavors from across India",
-      img: "/images/image2.png" // using placeholders, assuming image2 is a food grid
+      img: "/images/actual/cuisine-hd-1.jpg"
     },
     {
       title: "TANDOOR",
       desc: "Sizzling tandoori delights\ncooked to perfection",
-      img: "/images/image4.png"
+      img: "/images/actual/cuisine-hd-2.jpg"
     },
     {
       title: "CHINESE",
       desc: "A perfect blend of spices\nand asian ingredients",
-      img: "/images/image7.png"
+      img: "/images/actual/cuisine-hd-3.jpg"
     },
     {
       title: "CONTINENTAL",
       desc: "Global flavors with a touch\nof perfection",
-      img: "/images/image9.png"
+      img: "/images/actual/cuisine-hd-4.jpg"
     }
   ];
 
