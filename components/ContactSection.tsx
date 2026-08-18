@@ -29,7 +29,7 @@ export default function ContactSection() {
               </svg>
               <div>
                 <h5 className="text-primary text-xs font-bold tracking-widest mb-1">LOCATION</h5>
-                <p className="text-gray-500 text-sm">Aradot, Mussoorie Road,<br/>Chamba, Tehri, Uttarakhand</p>
+                <p className="text-gray-500 text-sm">Arakot, Chamba, Kanatal Masoorie Road,<br/>Tehri Gharwal 249145, Uttarakhand</p>
               </div>
             </div>
             
@@ -39,7 +39,7 @@ export default function ContactSection() {
               </svg>
               <div>
                 <h5 className="text-primary text-xs font-bold tracking-widest mb-1">PHONE</h5>
-                <p className="text-gray-500 text-sm">+91 9897877909<br/>+91 6316861348</p>
+                <p className="text-gray-500 text-sm">+91 9997877909</p>
               </div>
             </div>
             

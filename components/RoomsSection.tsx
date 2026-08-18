@@ -115,9 +115,14 @@ export default function RoomsSection() {
                   <p className="text-gray-500 text-xs whitespace-pre-line leading-relaxed mb-6 flex-grow">
                     {room.desc}
                   </p>
-                  <button className="border border-primary text-primary px-6 py-2 text-xs font-semibold tracking-widest hover:bg-primary hover:text-white transition-colors w-full">
+                  <a 
+                    href="https://wa.me/919997877909?text=Hello%20UK%20Season%20by%20Hotel%20Kamal%20Residency,%20I%20would%20like%20to%20book%20a%20room." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="border border-primary text-primary px-6 py-2 text-xs font-semibold tracking-widest hover:bg-primary hover:text-white transition-colors w-full text-center block"
+                  >
                     BOOK NOW
-                  </button>
+                  </a>>
                 </div>
               </div>
             ))}

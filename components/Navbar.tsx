@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
 
       <a
-        href="https://wa.me/919897877909?text=Hello%20UK%20Season%20by%20Hotel%20Kamal%20Residency,%20I%20would%20like%20to%20book%20a%20room."
+        href="https://wa.me/919997877909?text=Hello%20UK%20Season%20by%20Hotel%20Kamal%20Residency,%20I%20would%20like%20to%20book%20a%20room."
         target="_blank"
         rel="noopener noreferrer"
         className="whitespace-nowrap border border-accent text-accent px-4 py-2 xl:px-6 text-xs xl:text-sm font-semibold tracking-wider hover:bg-accent hover:text-primary transition-colors flex items-center gap-2"

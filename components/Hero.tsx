@@ -44,7 +44,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-6">
           <a 
-            href="https://wa.me/919897877909?text=Hello%20UK%20Season%20by%20Hotel%20Kamal%20Residency,%20I%20would%20like%20to%20book%20a%20room." 
+            href="https://wa.me/919997877909?text=Hello%20UK%20Season%20by%20Hotel%20Kamal%20Residency,%20I%20would%20like%20to%20book%20a%20room." 
             target="_blank" 
             rel="noopener noreferrer"
             className="border border-accent bg-accent text-primary px-8 py-3 text-sm font-semibold tracking-wider hover:bg-transparent hover:text-white transition-colors flex items-center justify-center gap-3 w-max whitespace-nowrap"
