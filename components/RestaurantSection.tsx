@@ -41,7 +41,7 @@ export default function RestaurantSection() {
   ];
 
   return (
-    <section className="w-full relative min-h-[600px] flex items-center">
+    <section className="w-full relative min-h-[600px] flex flex-col md:flex-row md:items-center">
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -53,33 +53,33 @@ export default function RestaurantSection() {
           priority
         />
         {/* Subtle gradient to ensure text readability on mobile where the image might crop differently */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 md:via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent md:bg-gradient-to-r md:from-primary/90 md:via-primary/50 md:to-transparent"></div>
       </div>
 
       {/* Left Content over the image */}
-      <div className="relative z-10 w-full md:w-1/2 p-12 lg:p-24 flex flex-col justify-center pb-32 md:pb-24">
-        <h4 className="text-accent text-sm font-semibold tracking-widest mb-2 uppercase">OUR RESTAURANT</h4>
-        <h2 className="text-white text-5xl font-serif mb-6">UK SEASON<br/>RESTAURANT</h2>
+      <div className="relative z-10 w-full md:w-1/2 p-8 pt-24 md:p-12 lg:p-24 flex flex-col justify-center flex-1 md:pb-24">
+        <h4 className="text-accent text-xs md:text-sm font-semibold tracking-widest mb-2 uppercase">OUR RESTAURANT</h4>
+        <h2 className="text-white text-4xl md:text-5xl font-serif mb-4 md:mb-6">UK SEASON<br/>RESTAURANT</h2>
         <p className="text-gray-300 text-sm leading-relaxed mb-8 max-w-md">
           A culinary journey like no other. From authentic Indian flavors to global favorites, our multi-cuisine menu is crafted to satisfy every palate.
         </p>
       </div>
 
       {/* Features overlap at the bottom */}
-      <div className="absolute bottom-0 left-0 w-full bg-white hidden md:block">
+      <div className="absolute bottom-0 left-0 w-full bg-white hidden md:block z-10">
         <div className="grid grid-cols-4 max-w-7xl mx-auto py-8 px-8">
           {features.map((feature, index) => (
-            <div key={index} className="text-center px-4">
-              {feature.icon}
-              <h3 className="text-primary text-xs font-semibold tracking-widest mb-1">{feature.title}</h3>
-              <p className="text-gray-500 text-[10px] leading-relaxed max-w-[150px] mx-auto">{feature.desc}</p>
-            </div>
+             <div key={index} className="text-center px-4">
+               {feature.icon}
+               <h3 className="text-primary text-xs font-semibold tracking-widest mb-1">{feature.title}</h3>
+               <p className="text-gray-500 text-[10px] leading-relaxed max-w-[150px] mx-auto">{feature.desc}</p>
+             </div>
           ))}
         </div>
       </div>
       
       {/* Mobile features (stacked) */}
-      <div className="w-full bg-white block md:hidden">
+      <div className="relative z-10 w-full bg-white block md:hidden mt-auto">
         <div className="grid grid-cols-2 gap-4 py-8 px-4">
           {features.map((feature, index) => (
             <div key={index} className="text-center p-4">
