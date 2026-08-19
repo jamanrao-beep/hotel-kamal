@@ -25,7 +25,7 @@ export default function CuisinesSection() {
     {
       title: "SOUTH INDIAN",
       desc: "Authentic dosas, idlis\nand flavorful chutneys",
-      img: "/images/actual/gallery-food-1.jpg"
+      img: "/images/actual/south_india.jpeg"
     }
   ];
 
