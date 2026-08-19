@@ -3,14 +3,16 @@ import Image from 'next/image';
 export default function GallerySection() {
   // Using placeholders. In reality, these would be the diverse images from the Word doc
   const images = [
-    "/images/actual/hq-2.jpeg",
-    "/images/actual/hq-4.jpeg",
-    "/images/actual/hq-3.jpeg",
-    "/images/actual/hq-1.jpeg",
-    "/images/actual/gallery-food-1.jpg",
-    "/images/actual/gallery-food-2.jpg",
-    "/images/actual/gallery-food-3.jpg",
-    "/images/actual/gallery-food-4.jpg",
+    { src: "/images/aboutus_header.png", className: "col-span-2 row-span-2" },
+    { src: "/images/actual/hq-4.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/hq-3.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/hq-1.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/gallery-food-1.jpg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/gallery-food-2.jpg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/gallery-food-3.jpg", className: "col-span-1 row-span-1" },
+    { src: "/images/actual/gallery-food-4.jpg", className: "col-span-2 row-span-2" },
+    { src: "/images/image_1.jpeg", className: "col-span-1 row-span-1" },
+    { src: "/images/image_2.jpeg", className: "col-span-1 row-span-1" },
   ];
 
   return (
@@ -27,14 +29,14 @@ export default function GallerySection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((img, index) => (
-            <div key={index} className="relative w-full aspect-square group overflow-hidden cursor-pointer">
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-4">
+          {images.map((item, index) => (
+            <div key={index} className={`relative w-full h-full group overflow-hidden cursor-pointer rounded-xl ${item.className}`}>
               <Image
-                src={img}
+                src={item.src}
                 alt={`Gallery image ${index + 1}`}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
