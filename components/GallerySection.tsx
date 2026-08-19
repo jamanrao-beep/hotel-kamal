@@ -1,8 +1,6 @@
 import Image from 'next/image';
 
 export default function GallerySection() {
-  const categories = ["ALL", "RESTAURANT", "ROOMS", "EXTERIOR", "ROOFTOP CAFE"];
-  
   // Using placeholders. In reality, these would be the diverse images from the Word doc
   const images = [
     "/images/actual/hq-2.jpeg",
@@ -27,21 +25,6 @@ export default function GallerySection() {
             </svg>
             <div className="w-12 h-[1px] bg-primary"></div>
           </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-12">
-          {categories.map((cat, index) => (
-            <button 
-              key={index}
-              className={`text-xs font-semibold tracking-widest px-4 py-2 border ${
-                index === 0 
-                  ? 'bg-primary text-white border-primary' 
-                  : 'bg-transparent text-gray-500 border-gray-300 hover:border-primary hover:text-primary transition-colors'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

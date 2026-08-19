@@ -21,6 +21,11 @@ export default function CuisinesSection() {
       title: "CONTINENTAL",
       desc: "Global flavors with a touch\nof perfection",
       img: "/images/actual/cuisine-hd-4.jpg"
+    },
+    {
+      title: "SOUTH INDIAN",
+      desc: "Authentic dosas, idlis\nand flavorful chutneys",
+      img: "/images/actual/gallery-food-1.jpg"
     }
   ];
 
@@ -38,15 +43,15 @@ export default function CuisinesSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {cuisines.map((cuisine, index) => (
-            <div key={index} className="flex flex-col items-center group cursor-pointer">
+            <div key={index} className="flex flex-col items-center group cursor-pointer w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] max-w-[320px]">
               <div className="relative w-full aspect-square md:aspect-[4/3] mb-4 overflow-hidden rounded-t-full rounded-b-md shadow-sm">
                 <Image
                   src={cuisine.img}
                   alt={cuisine.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
